@@ -1,18 +1,14 @@
 import React from 'react'
-
-import Navbar from '../navbar/Navbar'
 import style from "./Home.module.css"
-import AllRoutes from '../Routes/AllRoutes'
-import { Button, Spacer } from '@chakra-ui/react'
+import { Button } from '@chakra-ui/react'
 import { Text } from '@chakra-ui/react'
 import { ArrowForwardIcon ,CheckIcon} from '@chakra-ui/icons'
-import Footer from '../footer/Footer'
+
 
 const Home = () => {
   return (
     <div>
-    <Navbar/>
-       <AllRoutes/>
+  
     {/* ................................. */}
     <div className={style.main} >
      <div className={style.part1}>
@@ -52,7 +48,7 @@ const Home = () => {
             <Text fontSize='lg'mt="10px" mb="20px">Get out of your inbox mess: create projects, 
               assign tasks and write-down or attach details. Track project 
               profitability with hourly rates.
-               Set up budgets and get reminded when you’re close.
+               Set up budgets and get reminded when youre close.
                </Text>
                <Text fontSize='lg' as='i' color= "#507791">"“Excellent time tracker to manage your 
                 tasks! It changed the way I organize myself, 
@@ -171,7 +167,6 @@ const Home = () => {
 
         </div>
 
-   <Footer/>
     </div>
   )
 }
