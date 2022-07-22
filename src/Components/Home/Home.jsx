@@ -82,7 +82,7 @@ const navigate =useNavigate()
    <div className={style.part6}>
    <div className={style.part6_box1}>
             <h2>Create great-looking reports</h2>
-            <Text fontSize='lg'mt="10px" mb="20px">urn your work into dazzling reports 
+            <Text fontSize='lg'mt="10px" mb="20px">Turn your work into dazzling reports 
             with confidence. From Dashboard to more advanced time analytics.
              No need for extra spreadsheet work, 
             even though you can export your data.
@@ -97,7 +97,7 @@ const navigate =useNavigate()
            </div>
    </div>
         <div style={{textAlign:"center",marginTop:"40px",marginBottom:"30px",cursor:"pointer"}}>
-        <Text as='u' fontSize="2xl" color= "#507791">See how My Hours Works in detail  <span><ArrowForwardIcon/></span> </Text>
+        <Text as='u' fontSize="2xl" color= "#507791" onClick={()=>navigate("/works")}>See how My Hours Works in detail  <span><ArrowForwardIcon/></span> </Text>
         </div>
         <div className={style.part7}>
           <Text  fontSize="4xl" color="#375d75">A flexible tool for all types of organizations</Text>
@@ -139,10 +139,10 @@ const navigate =useNavigate()
         <Text  fontSize="3xl" color= "#507791" mt="10px">Have questions? We're here</Text>
          <p style={{fontSize:"20px",marginTop:"10px"}}>It's always nice to have someone to talk to when facing new software. Get in touch and <br /> we'll try our best to help you out.</p>
         <div className={style.part8_box1}>
-         <Text as="u" color="blue" pr="20px"> <span><CheckIcon/></span> EMAIL & LIVE CHAT</Text>
+         <Text as="u" color="blue" pr="20px" cursor="pointer" onClick={()=>navigate("/support")}> <span><CheckIcon/></span> EMAIL & LIVE CHAT</Text>
        
-         <Text as="u" color="blue"  pr="20px"> <span><CheckIcon/></span> TRAINING FOR TEAMS</Text>
-         <Text as="u" color="blue"> <span><CheckIcon/></span> KNOWLEDGE BASE</Text>
+         <Text as="u" color="blue"  pr="20px"  cursor="pointer" onClick={()=>navigate("/support")}> <span><CheckIcon/></span> TRAINING FOR TEAMS</Text>
+         <Text as="u" color="blue"  cursor="pointer" onClick={()=>navigate("/support")}> <span><CheckIcon/></span> KNOWLEDGE BASE</Text>
         </div>
         </div>
 <div className={style.part9}>

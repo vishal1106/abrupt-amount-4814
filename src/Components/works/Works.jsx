@@ -123,10 +123,10 @@ const Works = () => {
         <Text  fontSize="3xl" color= "#507791" mt="10px">Have questions? We're here</Text>
          <p style={{fontSize:"20px",marginTop:"10px"}}>It's always nice to have someone to talk to when facing new software. Get in touch and  we'll try our best to help you out.</p>
         <div className={style.part9_box1}>
-         <Text as="u" color="blue" pr="20px" cursor="pointer"> <span><CheckIcon/></span> EMAIL & LIVE CHAT</Text>
+         <Text as="u" color="blue" pr="20px" cursor="pointer" onClick={()=>navigate("/support")}> <span><CheckIcon/></span> EMAIL & LIVE CHAT</Text>
        
-         <Text as="u" color="blue"  pr="20px"> <span><CheckIcon/></span> TRAINING FOR TEAMS</Text>
-         <Text as="u" color="blue"> <span><CheckIcon/></span> KNOWLEDGE BASE</Text>
+         <Text as="u" color="blue"  pr="20px" cursor="pointer" onClick={()=>navigate("/support")}> <span><CheckIcon/></span> TRAINING FOR TEAMS</Text>
+         <Text as="u" color="blue" cursor="pointer" onClick={()=>navigate("/support")}> <span><CheckIcon/></span> KNOWLEDGE BASE</Text>
         </div>
         </div>
     </div>
