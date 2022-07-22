@@ -5,7 +5,7 @@ import Home from '../Home/Home'
 import Sign from '../Pages/Sign'
 import Support from '../Pages/Support'
 import Usecase from '../usecase/Usecase'
-import Works from '../Pages/Works'
+import Works from '../works/Works'
 
 const AllRoutes = () => {
   return (
