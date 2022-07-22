@@ -3,9 +3,11 @@ import style from "./Home.module.css"
 import { Button } from '@chakra-ui/react'
 import { Text } from '@chakra-ui/react'
 import { ArrowForwardIcon ,CheckIcon} from '@chakra-ui/icons'
+import { useNavigate } from 'react-router-dom'
 
 
 const Home = () => {
+const navigate =useNavigate()
   return (
     <div>
   
